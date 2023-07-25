@@ -1,0 +1,95 @@
+/* circle */
+.lingkaran, .titik {
+    border-radius: 50%;
+}
+
+/* position relative is used so the child offset is inside the container  */
+.lingkaran {
+    position: relative;
+    height: 15cm;
+    width: 15cm;
+    border:1vh solid black;
+}
+
+.titik {
+    /* absolute xy */
+    position: absolute;
+    top: 7.2cm;
+    left: 7.2cm;
+    height: 0.6cm;
+    width: 0.6cm;
+    background-color: brown;
+    z-index: 4;
+}
+.jarum {
+    position: absolute;
+    bottom: 7.5cm;
+    background-color: black;
+    /* anchor */
+    transform-origin: bottom;
+}
+.jam {
+    left: 7.35cm;
+    height: 3.5cm;
+    width: 0.3cm;
+    z-index: 1;
+}
+.menit {
+    left: 7.4cm;
+    height: 5.4cm;
+    width: 0.2cm;
+    z-index: 2;
+}
+.detik {
+    left: 7.45cm;
+    height: 6.3cm;
+    width: 0.1cm;
+    background-color: red;
+    z-index: 3;
+    
+}
+
+.garis {
+    position: absolute;
+    top: -0.1cm;
+    left: 7.4cm;
+    height: 0.7cm;
+    width: 0.2cm;
+    background-color: black;
+    transform-origin: 0 7.6cm;
+}
+
+/* i can't automate this, i'm sorry */
+.garis:nth-child(2) {
+    transform: rotate(30deg);
+}
+.garis:nth-child(3) {
+    transform: rotate(60deg);
+}
+.garis:nth-child(4) {
+    transform: rotate(90deg);
+}
+.garis:nth-child(5) {
+    transform: rotate(120deg);
+}
+.garis:nth-child(6) {
+    transform: rotate(150deg);
+}
+.garis:nth-child(7) {
+    transform: rotate(180deg);
+}
+.garis:nth-child(8) {
+    transform: rotate(210deg);
+}
+.garis:nth-child(9) {
+    transform: rotate(240deg);
+}
+.garis:nth-child(10) {
+    transform: rotate(270deg);
+}
+.garis:nth-child(11) {
+    transform: rotate(300deg);
+}
+.garis:nth-child(12) {
+    transform: rotate(330deg);
+}
